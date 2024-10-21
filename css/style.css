@@ -552,23 +552,28 @@ body {
                         width:100%;
                     }   
 
-                        h6 {
-                            width:50%;   
-                            margin-left: 0px;  
-                            padding-bottom: 15px; 
-                            text-align: center;   
-                            border:solid var(--main-bg-color); 
-                            border-width: 0 0 2px 0;      
+                        .nav-menu a {
+                            width:50%;
                         }
 
-                        .menu-actif {
-                            width:50%;   
-                            margin-left: 0px;  
-                            padding-bottom: 15px; 
-                            text-align: center;   
-                            border:solid var(--main-color); 
-                            border-width: 0 0 2px 0;                       
-                        }
+                            h6 {
+                                width:100%;   
+                                margin-left: 0px;  
+                                padding-bottom: 15px; 
+                                text-align: center;   
+                                border:solid var(--main-bg-color); 
+                                border-width: 0 0 2px 0;      
+                            }
+
+                            .menu-actif {
+                                width:100%;   
+                                margin-left: 0px;  
+                                padding-bottom: 15px; 
+                                text-align: center;   
+                                border:solid var(--main-color); 
+                                border-width: 0 0 2px 0;   
+                                padding-top:16px;                                        
+                            }
 
                 /*——————————*/
 
