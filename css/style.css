@@ -203,7 +203,7 @@ body {
                         font-size:16px;
                     }
 
-                    .search-filtres-li:hover {
+                    .search-filtres li:hover {
                         background-color: var(--filter-bg-color);
                     }
 
@@ -577,6 +577,14 @@ body {
                                 border-width: 0 0 2px 0;      
                             }
 
+                            h4:hover {
+                                color: black;
+                                border: solid var(--main-bg-color);
+                                border-width: 0 0 2px 0;      
+                                padding-top:16px;    
+                                opacity: 1;                   
+                            }                            
+
                             .menu-actif {
                                 width:100%;   
                                 margin-left: 0px;  
@@ -585,6 +593,12 @@ body {
                                 border:solid var(--main-color); 
                                 border-width: 0 0 2px 0;   
                                 padding-top:16px;                                        
+                            }
+
+                            .menu-actif:hover {
+                                color: var(--main-color);
+                                border:solid var(--main-color); 
+                                border-width: 0 0 2px 0;   
                             }
 
                 /*——————————*/
