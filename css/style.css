@@ -56,28 +56,38 @@ body {
                 display: flex;
             }
 
-                h4 {
+                .nav-menu p {
+                    margin-top: 0;
+                }
+
+                .menu-hebergements {
                     font-size:16px;
                     font-weight: normal;
                     margin-left:68px;
                     margin-top:0;                    
                     padding-top:16px;
-                    cursor: pointer;                    
+                    cursor: pointer;    
+                    border: solid var(--main-color);
+                    border-width: 2px 0 0 0; 
                 }
 
-                h4:hover {
+                .menu-activites {
+                    font-size:16px;
+                    font-weight: normal;
+                    margin-left:68px;
+                    margin-top:0;                    
+                    padding-top:16px;
+                    cursor: pointer;    
+                    border: solid white;
+                    border-width: 2px 0 0 0; 
+                    margin-left:68px;
+                }
+
+                .menu-hebergements:hover, .menu-activites:hover {
                     color: var(--main-color);
                     border: solid var(--main-color);
                     border-width: 2px 0 0 0;
-                    padding-top:14px;    
                     opacity: 0.5;                   
-                }
-
-                .menu-actif {
-                    color: var(--main-color);
-                    border: solid var(--main-color);
-                    border-width: 2px 0 0 0;
-                    padding-top:14px;                    
                 }
 
         /*—————————— FIN DE HEADER ——————————*/
@@ -177,15 +187,18 @@ body {
 
             }
 
-                .search-filtres h3 {
+                .search-filtres p {
                     font-size:18px;
                     margin-right: 15px;  
                     align-items: center;
+                    font-weight: bold;
                 }
 
                 .search-filtres ul {
                     display:flex;
                     align-items: center;
+                    flex-wrap: wrap;
+                    gap: 15px;
                     padding:0;
                     margin:0px
                 }
@@ -193,7 +206,6 @@ body {
                     .search-filtres li {
                         list-style-type: none;
                         font-weight: bold;
-                        margin-right:15px;
                         border: 2px solid var(--main-bg-color);
                         border-radius:30px;
                         padding: 15px 19px 15px 19px;
@@ -282,7 +294,7 @@ body {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    align-items: center;
+                    align-items: stretch;
                 }
 
                     .hebergements-list a {
@@ -307,6 +319,7 @@ body {
 
                         .hebergements-list-card-bottom {
                             margin-left:15px;
+                            margin-right:15px;
                             margin-bottom:15px;
                         }        
 
@@ -431,22 +444,29 @@ body {
                     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));                                     
                 }
 
-                .activites-list-card-top {
-                    height:380px; 
-                }           
+                .activites-list-card {
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
 
-                .activites-list-card-top img {
-                    width:100%; 
-                    height:100%;
-                    object-fit: cover;
-                    border-radius: 15px 15px 0px 0px;                        
-                }      
+                    .activites-list-card-top {
+                        height:380px; 
+                        width:100%
+                    }           
 
-                .activites-list-card p {
-                    margin:20px 19px 20px 19px;
-                    font-size: 16px;
-                    font-weight: bold;                      
-                }                              
+                    .activites-list-card-top img {
+                        width:100%; 
+                        height:100%;
+                        object-fit: cover;
+                        border-radius: 15px 15px 0px 0px;                        
+                    }      
+
+                    .activites-list-card p {
+                        margin:20px 19px 20px 19px;
+                        font-size: 16px;
+                        font-weight: bold;                      
+                    }                              
 
         /*—————————— FIN DE SECTION ACTIVITÉS ——————————*/
               
@@ -462,13 +482,20 @@ body {
 
             footer div {
                 width: 31%;  
+                margin: 20px
             }
 
+                footer p {
+                    font-weight: bold;
+                    margin:0;
+                    margin-bottom: 15px;
+                }
+                
                 footer ul {
                     list-style-type: none;
                     font-size:16px;
-                    padding:20px;
                     margin:0;
+                    padding:0;
                 }
 
                     footer li {
@@ -541,7 +568,7 @@ body {
 
     /* MOBILE */
 
-        @media (min-width: 320px) and (max-width: 767.98px) {
+        @media (max-width: 767.98px) {
 
             .main-container {
                 padding:0px;
@@ -566,26 +593,9 @@ body {
 
                         .nav-menu a {
                             width:50%;
-                        }
+                        }                      
 
-                            h4 {
-                                width:100%;   
-                                margin-left: 0px;  
-                                padding-bottom: 15px; 
-                                text-align: center;   
-                                border:solid var(--main-bg-color); 
-                                border-width: 0 0 2px 0;      
-                            }
-
-                            h4:hover {
-                                color: black;
-                                border: solid var(--main-bg-color);
-                                border-width: 0 0 2px 0;      
-                                padding-top:16px;    
-                                opacity: 1;                   
-                            }                            
-
-                            .menu-actif {
+                            .menu-hebergements {
                                 width:100%;   
                                 margin-left: 0px;  
                                 padding-bottom: 15px; 
@@ -595,10 +605,21 @@ body {
                                 padding-top:16px;                                        
                             }
 
-                            .menu-actif:hover {
-                                color: var(--main-color);
-                                border:solid var(--main-color); 
+                            .menu-activites {
+                                width:100%;   
+                                margin-left: 0px;  
+                                padding-bottom: 15px; 
+                                text-align: center;   
+                                border:solid var(--main-bg-color); 
                                 border-width: 0 0 2px 0;   
+                                padding-top:16px;                                        
+                            }
+
+                            .menu-hebergements:hover, .menu-activites:hover {
+                                color: var(--main-color);
+                                border: solid var(--main-color);
+                                border-width: 0 0 2px 0;   
+                                opacity: 0.5;                   
                             }
 
                 /*——————————*/
@@ -635,15 +656,11 @@ body {
                     }
 
                         .search-filtres ul {
-                            margin-right:20px;
-                            display:grid;
-                            grid-template-columns: 50% 50%;
-                            gap :0px 15px;
+                            margin-bottom: 20px;
                         }
 
                             .search-filtres li {
                                 margin-right:0;
-                                margin-bottom: 20px;
                                 font-size: 14px;
                             }
 
@@ -731,4 +748,24 @@ body {
                         }
 
                 /*——————————*/    
+        }
+
+        @media (max-width: 399.98px) {
+
+            .search-filtres ul {
+                justify-content: space-between;
+                gap:15px 2%;
+            }
+
+            .search-filtres li {
+                font-size:12px;
+                width:34%;
+            }
+
+            li img {
+                width: 18px;
+                height: 18px;
+                margin-right:10px;
+            }
+
         }
