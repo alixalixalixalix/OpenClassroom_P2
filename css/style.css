@@ -476,37 +476,40 @@ body {
 
         footer {
             background-color: var(--main-bg-color);
-            display: flex;
-            justify-content: space-between;
         }
 
-            footer div {
-                width: 31%;  
-                margin: 20px
+            footer nav {
+                display: flex;
+                justify-content: space-between;
             }
 
-                footer p {
-                    font-weight: bold;
-                    margin:0;
-                    margin-bottom: 15px;
-                }
-                
-                footer ul {
-                    list-style-type: none;
-                    font-size:16px;
-                    margin:0;
-                    padding:0;
+                nav div {
+                    width: 31%;  
+                    margin: 20px;
                 }
 
-                    footer li {
-                        margin-bottom:15px;
-                    }
-
-                    mark {
-                        font-size:18px;
+                    footer p {
                         font-weight: bold;
-                        background-color: var(--main-bg-color);
+                        margin:0;
+                        margin-bottom: 15px;
                     }
+                    
+                    footer ul {
+                        list-style-type: none;
+                        font-size:16px;
+                        margin:0;
+                        padding:0;
+                    }
+
+                        footer li {
+                            margin-bottom:15px;
+                        }
+
+                        mark {
+                            font-size:18px;
+                            font-weight: bold;
+                            background-color: var(--main-bg-color);
+                        }
 
         /*—————————— FIN FOOTER ——————————*/
 
@@ -736,7 +739,7 @@ body {
 
                 /* FOOTER */
 
-                    footer {
+                    footer nav {
                         flex-wrap: wrap;
                         padding-top:20px;
                     }
